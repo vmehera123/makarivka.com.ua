@@ -1,0 +1,24 @@
+{
+  "name": "makarivka.com.ua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vmehera123/makarivka.com.ua.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmehera123/makarivka.com.ua/issues"
+  },
+  "homepage": "https://github.com/vmehera123/makarivka.com.ua#readme"
+}
