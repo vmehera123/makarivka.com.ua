@@ -3,10 +3,19 @@ var express = require("express"),
     path = require("path");
 
 app.use(express.static(path.join(__dirname + "/static")));
-app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/index.html"));
+
+app.get("/", function (req, res) {
+	res.sendFile(path.resolve(__dirname, "./views/index.html"));
+});
+
+app.get("/about", function (req, res) {
+	res.sendFile(path.resolve(__dirname, "./views/about.html"));
+});
+
+app.get("/gallery", function (req, res) {
+	res.sendFile(path.resolve(__dirname, "./views/gallery.html"));
 });
 
 app.listen(8000, function() {
-  console.log("SERVER IS RUNNING");
+  	console.log("SERVER IS RUNNING");
 });
