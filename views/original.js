@@ -8,7 +8,7 @@ $(document).ready(function () {
 	$document.trigger("scroll");
 
 	$(".carousel").carousel({
-		interval: 5000 //changes the speed
+		interval: 10000 //changes the speed
 	});
 
 	function onScrollNavbarHandler() {
@@ -38,7 +38,8 @@ $(document).ready(function () {
 		} else {
 			$main.css({
 				opacity: calculateOpacity(top, $height),
-				position: "fixed"
+				position: "fixed",
+				"z-index": calculateOpacity(top, $height) > 0.8? 3 : 1
 			});
 			$header.removeAttr("style");
 		}
