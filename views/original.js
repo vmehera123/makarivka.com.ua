@@ -1,11 +1,14 @@
 $(document).ready(function () {
-	var $document = $(document);
+	var $document = $(document),
+		$hpHeroBtn = $(".hp-hero-more");
 
 	$document.on("scroll", function () {
 		onScrollHeroWrapperHandler();
 		onScrollNavbarHandler();
 	});
 	$document.trigger("scroll");
+
+	$hpHeroBtn.on("click", scrollToMainContent);
 
 	$(".carousel").carousel({
 		interval: 10000 //changes the speed
@@ -51,5 +54,11 @@ $(document).ready(function () {
 		if (result > 1) return 1;
 
 		return result;
+	}
+	
+	function scrollToMainContent() {
+		$("html").animate({
+			scrollTop: $(window).height() - $document.scrollTop()
+		});
 	}
 });
