@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /js/
+Disallow: /css/
+
+Host: http://makarivka.com.ua
+
+Sitemap: http://makarivka.com.ua/sitemap.xml
