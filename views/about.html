@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="utf-8">
@@ -95,6 +95,16 @@
                 margin: 5px 0;
             }
         }
+        .choose-lang a {
+            display: inline-block !important;
+            font-size: 12px;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .inactive {
+            color: #9d9d9d;
+            pointer-events: none;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -129,6 +139,12 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/">Головна</a>
+                <a href="/ru/about" title="Русский язык" style="line-height: 40px;">
+                    <img src="../static/images/lang_ru.png" alt="rus" height="30px" />
+                </a>
+                <a class="inactive" title="Українська мова" style="line-height: 40px;">
+                    <img src="../static/images/lang_ua.png" alt="uk" height="30px" />
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -138,6 +154,14 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="choose-lang">
+                        <a href="/ru/about" title="Русский язык">
+                            <img src="../static/images/lang_ru.png" alt="rus" height="16px" />
+                        </a>
+                        <a class="inactive" title="Українська мова">
+                            <img src="../static/images/lang_ua.png" alt="uk" height="16px" />
+                        </a>
+                    </li>
                     <li>
                         <a href="tel:+380997792394" rel="nofollow" target="_blank"><span>+38 (<span style="color: #e60000;">099</span>) 779-23-94</span></a>
                     </li>
@@ -177,11 +201,11 @@
                             <tbody>
                                 <tr>
                                     <td>Весна, Осінь</td>
-                                    <td>850 грн</td>
+                                    <td>1300 грн</td>
                                 </tr>
                                 <tr>
                                     <td>Літо</td>
-                                    <td>1000 грн</td>
+                                    <td>від 1300 грн</td>
                                 </tr>
                             </tbody>
                         </table>

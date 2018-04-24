@@ -12,6 +12,14 @@ app.get("/about", function (req, res) {
 	res.sendFile(path.resolve(__dirname, "./views/about.html"));
 });
 
+app.get("/ru", function (req, res) {
+	res.sendFile(path.resolve(__dirname, "./views/index-ru.html"));
+});
+
+app.get("/ru/about", function (req, res) {
+    res.sendFile(path.resolve(__dirname, "./views/about-ru.html"));
+});
+
 app.get("/robots.txt", function (req, res) {
 	res.sendFile(path.resolve(__dirname, "./robots.txt"));
 });
